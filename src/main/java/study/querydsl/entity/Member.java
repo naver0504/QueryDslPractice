@@ -10,7 +10,7 @@ import static jakarta.persistence.FetchType.*;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
 @Builder
-@ToString(of = {"id, username, age"})
+@ToString(of = {"id", "username", "age"})
 public class Member {
 
     @Id @GeneratedValue
