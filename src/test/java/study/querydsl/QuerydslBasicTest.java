@@ -15,6 +15,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.context.annotation.Profile;
+import org.springframework.test.context.ActiveProfiles;
 import study.querydsl.entity.Member;
 import study.querydsl.entity.QMember;
 import study.querydsl.entity.Team;
@@ -28,7 +29,7 @@ import static study.querydsl.entity.QTeam.team;
 
 @DataJpaTest
 @Slf4j
-@Profile("test")
+@ActiveProfiles("test")
 public class QuerydslBasicTest {
 
     @Autowired
