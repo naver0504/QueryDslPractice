@@ -130,8 +130,8 @@ public class QuerydslBasicTest {
                         .selectFrom(member)
                         .fetchResults();
 
-        results.getTotal();
-
+        long count = results.getTotal();
+        System.out.println("count = " + count);
         final List<Member> content = results.getResults();
 
         final long total = queryFactory
