@@ -117,7 +117,8 @@ public class MemberJpaRepository {
         return  builder
                 .and(ageGoe(condition.getAgeGoe()))
                 .and(ageLoe(condition.getAgeLoe()))
-                .and(teamNameEq(condition.getTeamName()));
+                .and(teamNameEq(condition.getTeamName()))
+                .and(usernameEq(condition.getUsername()));
 
     }
 
